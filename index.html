@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <link rel="icon" type="image/x-ico" href="/pictures/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <title>
+        Home
+    </title>
+
+
+
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="item1">
+            <div class="headergrid">
+                <div class="headerlogo">
+                    <img src="/pictures/wappen.jpg" alt="WSS Icon" style="width:190px;height:190px;">
+                </div>
+                <div class="headerheadline">
+                    <h1>
+                        Westside Soccers 1995 e.V.
+                    </h1>
+                </div>
+                <div class="header_ataboutwriting">
+                    <h2>
+                        Hobbyfußball in Kempten
+                    </h2>
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn">Über uns
+                        </button>
+                                <div class="dropdown-content">
+                                    <a href="organisatorisches.html">Organisatorisches</a>
+                                    <a href="historisches.html">Historie</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn">Berichte
+                            </button>
+                                <div class="dropdown-content">
+                                    <a href="eventberichte.html">Eventberichte</a>
+                                    <a href="spielberichte.html">Spielberichte</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="sponsoren.html">Sponsoren</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li style="float:right"><a href="downloadbereich.html">Downloadbereich</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="item3">
+
+            <section>
+                <p class="thick">Die Saison 2020 steht in den Startlöchern!</p>
+
+                <p>Du hast Lust auf kicken? Dann melde Dich bei uns unter:</p>
+                <p>westsidesoccers@gmail.com</p>
+            </section>
+            <section>
+                <br><br>
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="/pictures/Mannschaft201507small.jpg" style="width:100%">
+                        <div class="text thick">Die Mannschaft</div>
+                    </div>
+
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="/pictures/WhatsApp Image 2020-02-26 at 19.20.31.jpeg" style=" width:100% ">
+                        <div class="text thick">Bild des Monats</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="/pictures/WhatsApp Image 2020-02-26 at 20.02.03.jpeg" style="width:100%">
+                        <div class="text thick">1. Vorsitzender</div>
+                    </div>
+
+                </div>
+                <br>
+
+                <div style="text-align:center ">
+                    <span class="dot "></span>
+                    <span class="dot "></span>
+                    <span class="dot "></span>
+                </div>
+            </section>
+
+        </div>
+        <div class="item2 ">
+            <div class="bilddesmonats ">
+                <p class="white thicker underlined ">Bild des Monats</p>
+
+                <a href="/pictures/WhatsApp Image 2020-02-26 at 19.20.31.jpeg ">
+                    <img src="/pictures/WhatsApp Image 2020-02-26 at 19.20.31.jpeg " alt="BilddesMonats " class="responsive ">
+                </a>
+                <div class="desc ">Gaudiwurm 2020</div>
+            </div>
+
+            <div class="news ">
+                <p class="white thicker underlined ">News</p>
+                <p class="white ">Ab 01.04.2020</p>
+                <p class="white ">wieder draußen Training!</p>
+            </div>
+        </div>
+    </div>
+    <div class="item5 ">
+
+    </div>
+
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides ");
+            var dots = document.getElementsByClassName("dot ");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none ";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active ", " ");
+            }
+            slides[slideIndex - 1].style.display = "block ";
+            dots[slideIndex - 1].className += " active ";
+            setTimeout(showSlides, 3000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+
+</html>
